@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Rubik&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ecf0f1;
+	color: #f5f6fa;
+	 font-family: 'Rubik', sans-serif;
+	 font-family: 'Grand Hotel', cursive;
+}
+
+.header p{
+	
+	text-align: center;
+
+	
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 1000px;
+	
+	margin: auto;
+	
+	line-height: 40px;
+	text-align: center;
+   
+}
+
+.contenedor > div{
+	
+	padding: 20px;
+	
+	
+	
+
+
+}
+.logoup{ 
+	float: left;
+	margin-left: 2%;}
+
+#nombre{ 
+	     float: right;
+	     margin-right: 3%;
+	     padding-top: 1.5%;}
+
+#nombre a{ font-size: 8pt;
+	       
+	       text-decoration:	none; 
+	       	color:#ffffff;
+	        font-family: 'Rubik', sans-serif;
+}
+
+.titulo{ color: #ffffff;
+        font-size: 20pt;
+        margin-top: 3%;
+        margin-right: 2%;
+        margin-left: 2%;
+        padding: 2%;
+        float: left;
+	    text-align: center; 
+	   font-family: 'Grand Hotel', cursive;}
+
+form{
+    background-color: #fd79a8;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto ;
+    padding: 2%;
+    border-radius: 10px;
+    padding-top: 50px;
+     font-family: 'Rubik', sans-serif;
+
+}
+
+.cajas{
+    width: 50%;
+}
+
+.boton{
+    width: 80px;
+    height: 30px;
+    color: #dfe6e9;
+    background-color: #00b894;
+     font-family: 'Rubik', sans-serif;
+
+   
+}
+
+
+
+.tituloparte2{
+     font-family: 'Rubik', sans-serif;
+      color: #ffffff;
+        font-size: 10pt;
+        margin-top: 3%;
+        margin-right: 2%;
+        margin-left: 2%;
+        padding: 2%;
+        float: left;
+	    text-align: center; }
+
+.tituloparte3{ text-decoration: underline;
+               
+                }
+
+
+
+ #menu{
+	margin: 0;
+     margin-left: 2%; 
+}
+#menu li{
+	display: inline;
+}
+
+#menu li	a {
+	 font-family: 'Rubik', sans-serif;
+
+	font-size: 15px;
+	text-decoration: none;
+	float: left;
+	padding: 1%;
+	margin-top: 4%;
+	margin-right: 2%;
+	color:#1e272e; 
+	background-color: #ffffff;
+	border-radius: 20px;
+	
+	
+	
+}
+#logo{  padding-right: 2%;
+
+	float: right;
+	   
+
+ }
+
+.contenedor{
+	display: grid; /* declara al contenedor como una cuadricula */
+	/*grid-gap: 20px;    separacion entre elementos */
+	grid-template-columns: 1fr 1fr 1fr; /* columnas */
+	grid-template-rows: repeat(4, auto); /* filas */
+	grid-template-areas: "header	header		header" 	/* fila1 de la maqueta */
+						 "sidebar1	sidebar1 	sidebar2" 	/* fila2 de la maqueta */
+						 "sidebar1	 sidebar1	sidebar2" 	/* fila3 de la maqueta */
+						 "footer	footer		footer"; 	/* fila4 de la maqueta */
+
+}
+
+.contenedor .header{
+	background-color: #ff6b81;
+	grid-area: header;
+
+	
+}
+
+.contenedor .sidebar1{
+	background-image: url(jardin7.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ffffff; 
+
+
+
+
+	grid-area: sidebar1;
+}
+
+
+
+.contenedor .sidebar2{
+	background-color: #ffffff;
+	grid-area: sidebar2;
+}
+
+.contenedor .footer{
+	background-color: #ff6b81;
+	grid-area: footer;
+}
